@@ -31,24 +31,5 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderColor: "gray",
   },
-  photoArea: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  photo: {
-    width: 250,
-    height: 250,
-  },
-  account: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "center",
-    marginTop: 20,
-  },
-  register: {
-    marginLeft: 5,
-    color: "#b43b29",
-  },
 });
 export { styles };
