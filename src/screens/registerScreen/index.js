@@ -26,7 +26,7 @@ export default function RegisterScreen({ navigation }) {
           <View style={styles.inputArea}>
             <TextInput
               placeholderTextColor="gray"
-              placeholder="Username"
+              placeholder="Name"
               style={styles.input}
             />
             <TextInput
