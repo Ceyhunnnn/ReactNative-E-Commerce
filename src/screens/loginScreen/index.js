@@ -13,7 +13,9 @@ import Logo from "../../components/logo";
 import Button from "../../components/button";
 import PathConstant from "../../navigation/PathConstant";
 export default function LoginScreen({ navigation }) {
-  const login = () => {};
+  const login = () => {
+    navigation.navigate(PathConstant.HOME);
+  };
   const navigateToRegister = () => {
     navigation.navigate(PathConstant.REGISTER);
   };

@@ -4,6 +4,7 @@ import RegisterScreen from "./src/screens/registerScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import PathConstant from "./src/navigation/PathConstant";
+import HomeScreen from "./src/screens/homeScreen";
 
 const Stack = createStackNavigator();
 
@@ -23,6 +24,11 @@ export default function App() {
           name={PathConstant.REGISTER}
           component={RegisterScreen}
           options={{ title: "Register" }}
+        />
+        <Stack.Screen
+          name={PathConstant.HOME}
+          component={HomeScreen}
+          options={{ title: "Home", headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
