@@ -1,14 +1,13 @@
 import { SafeAreaView, View, Text } from "react-native";
 import { styles } from "./styles";
 import * as React from "react";
-import AppBar from "./../../components/AppBar";
+import AppBar from "./../../components/appBar";
+import Slider from "./../../components/slider";
 export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <AppBar />
-      <View style={styles.slider}>
-        <Text>Slider Area</Text>
-      </View>
+      <Slider />
     </SafeAreaView>
   );
 }

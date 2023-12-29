@@ -14,7 +14,7 @@ import Button from "../../components/button";
 import PathConstant from "../../navigation/PathConstant";
 export default function LoginScreen({ navigation }) {
   const login = () => {
-    navigation.navigate(PathConstant.HOME);
+    navigation.navigate(PathConstant.HOME_LAYOUT);
   };
   const navigateToRegister = () => {
     navigation.navigate(PathConstant.REGISTER);
