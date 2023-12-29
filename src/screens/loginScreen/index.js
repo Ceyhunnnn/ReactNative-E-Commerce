@@ -12,6 +12,7 @@ import { styles } from "./styles";
 import Logo from "../../components/logo";
 import Button from "../../components/button";
 import PathConstant from "../../navigation/PathConstant";
+import { imageList } from "../../utils/imageList";
 export default function LoginScreen({ navigation }) {
   const login = () => {
     navigation.navigate(PathConstant.HOME_LAYOUT);
@@ -26,10 +27,7 @@ export default function LoginScreen({ navigation }) {
     >
       <SafeAreaView>
         <View style={styles.photoArea}>
-          <Image
-            style={styles.photo}
-            source={require("../../assets/images/logo.png")}
-          />
+          <Image style={styles.photo} source={imageList.logo} />
         </View>
         <View style={styles.content}>
           <View style={styles.logoArea}>

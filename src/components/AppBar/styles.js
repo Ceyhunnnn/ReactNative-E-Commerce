@@ -1,9 +1,6 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  container: {
-    margin: 10,
-  },
   avatar: {
     width: 50,
     height: 50,
@@ -14,6 +11,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    paddingBottom: 5,
+    borderBottomWidth: 2,
+    borderBottomColor: "#ececec",
   },
   appBarUser: {
     display: "flex",

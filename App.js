@@ -57,7 +57,10 @@ export default function App() {
         <Stack.Screen
           name={PathConstant.HOME_LAYOUT}
           component={HomeLayout}
-          options={{ title: "HomeLayout", headerShown: false }}
+          options={{
+            title: "HomeLayout",
+            headerShown: false,
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
