@@ -8,7 +8,7 @@ import PathConstant from "./src/navigation/PathConstant";
 import HomeScreen from "./src/screens/homeScreen";
 import ProfileScreen from "./src/screens/profileScreen";
 import Ionicons from "@expo/vector-icons/Ionicons";
-
+import EditProfile from "./src/screens/profileScreen/screens/editProfile";
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 export default function App() {
@@ -28,7 +28,7 @@ export default function App() {
       <Tab.Screen
         name={PathConstant.PROFILE}
         options={{
-          headerShown: false,
+          title: "Profile",
           tabBarLabel: "Profile",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="person" size={24} color={color} />
@@ -60,6 +60,14 @@ export default function App() {
           options={{
             title: "HomeLayout",
             headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name={PathConstant.EDIT_PROFILE}
+          component={EditProfile}
+          options={{
+            title: "Edit Profile",
+            headerBackTitle: "Profile",
           }}
         />
       </Stack.Navigator>

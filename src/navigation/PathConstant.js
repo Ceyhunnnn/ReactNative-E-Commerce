@@ -4,5 +4,6 @@ const PathConstant = {
   HOME: "home",
   HOME_LAYOUT: "homelayout",
   PROFILE: "profile",
+  EDIT_PROFILE: "editProfile",
 };
 export default PathConstant;
