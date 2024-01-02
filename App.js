@@ -7,6 +7,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import PathConstant from "./src/navigation/PathConstant";
 import HomeScreen from "./src/screens/homeScreen";
 import ProfileScreen from "./src/screens/profileScreen";
+import BasketScreen from "./src/screens/basketScreen";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import EditProfile from "./src/screens/profileScreen/screens/editProfile";
 const Stack = createStackNavigator();
@@ -24,6 +25,17 @@ export default function App() {
           ),
         }}
         component={HomeScreen}
+      />
+      <Tab.Screen
+        name={PathConstant.BASKET}
+        options={{
+          title: "Basket",
+          tabBarLabel: "Basket",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="basket" size={24} color={color} />
+          ),
+        }}
+        component={BasketScreen}
       />
       <Tab.Screen
         name={PathConstant.PROFILE}
