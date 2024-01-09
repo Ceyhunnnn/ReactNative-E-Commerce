@@ -9,7 +9,12 @@ import ProductCard from "./../../components/productCard";
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView
+      style={[
+        styles.container,
+        { paddingTop: Platform.OS === "android" ? 25 : 0 },
+      ]}
+    >
       <View style={styles.content}>
         <AppBar />
         <ScrollView
